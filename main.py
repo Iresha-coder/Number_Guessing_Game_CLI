@@ -28,36 +28,36 @@ while True:
     if difficulty_level == "1":
         random_number = randint(1, 10)
         while True:
-            answer = input("Guess the number: ")
-            if answer.lower() == "q":
+            answer = int(input("Guess the number: "))
+            if str(answer).lower() == "q":
                 quit()
-            if int(answer) == random_number:
+            if answer == random_number:
                 print("You're correct")
                 break
-            elif int(answer) != random_number:
+            elif answer != random_number:
                 print("You're wrong! Try again")
                 continue
     elif difficulty_level == "2":
         random_number = randint(1, 20)
         while True:
-            answer = input("Guess the number: ")
-            if answer.lower() == "q":
+            answer = int(input("Guess the number: "))
+            if str(answer).lower() == "q":
                 quit()
-            if int(answer) == random_number:
+            if answer == random_number:
                 print("You're correct")
                 break
-            elif int(answer) != random_number:
+            elif answer != random_number:
                 print("You're wrong! Try again")
                 continue
     elif difficulty_level == "3":
         random_number = randint(1, 40)
         while True:
-            answer = input("Guess the number: ")
-            if answer.lower() == "q":
+            answer = int(input("Guess the number: "))
+            if str(answer).lower() == "q":
                 quit()
-            if int(answer) == random_number:
+            if answer == random_number:
                 print("You're correct")
                 break
-            elif int(answer) != random_number:
+            elif answer != random_number:
                 print("You're wrong! Try again")
                 continue
